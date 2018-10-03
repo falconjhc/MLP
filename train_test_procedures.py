@@ -382,9 +382,9 @@ def train_procedures(args):
             for bid in range(iteration_for_each_epoch_train):
 
                 # train_batch_data, train_batch_label = \
-                #     sess.run([train_data_tensor, train_label_tensor])
+                #     sess.run([train_data_tensor, train_true_label_tensor])
                 # test_batch_data, test_batch_label = \
-                #     sess.run([test_data_tensor, test_label_tensor])
+                #     sess.run([test_data_tensor, test_true_label_tensor])
 
                 _ = sess.run(optimizer)
 

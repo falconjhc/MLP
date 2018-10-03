@@ -1,9 +1,10 @@
-function [outputAccuracy,outputAuc]= OrgSvmImplementation(trainGroup,testGroupList,trainCmd,testCmd,param)
+function [outputAccuracy,outputAuc, thisTrainModel]= OrgSvmImplementation(trainGroup,testGroupList,trainCmd,testCmd,param)
 thisTrainModel=libsvmtrain(trainGroup.classLabel,trainGroup.data,trainCmd);
 [predictedLabel, accuracy, probability]=libsvmpredict(testGroupList.classLabel,testGroupList.data,thisTrainModel,testCmd);
 outputAccuracy=accuracy(1);
-outputAuc = CalAuc(probability,testGroupList.classLabel);
-
+probability_new=probability;
+probability_new(find(predictedLabel==0)) = 1-probability_new(find(predictedLabel==0));
+outputAuc = CalAuc(probability_new,testGroupList.classLabel);
 end
 
 
@@ -13,7 +14,7 @@ function  auc = CalAuc( predict, ground_truth )
 %  predict       - 分类器对测试集的分类结果
 %  ground_truth - 测试集的正确标签,这里只考虑二分类，即0和1
 % OUTPUTS
-%  auc            - 返回ROC曲线的曲线下的面积
+%  auc            - 返回ROC曲线的曲 线下的面积
 
 %初始点为（1.0, 1.0）
 x = 1.0;
@@ -45,8 +46,9 @@ end
 % xlabel('虚报概率');
 % ylabel('击中概率');
 % title('ROC曲线图');
-%计算小矩形的面积,返回auc
+% 计算小矩形的面积,返回auc
 auc = -trapz(X,Y);          
 end
 
 
+	
