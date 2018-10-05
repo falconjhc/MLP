@@ -17,9 +17,10 @@ input_args = ['--exp_name','Exp20181002_JQ',
               '--training_mode','0',
 
               '--batch_size','16',
+              '--auc_loss_penalty','100',
 
               '--init_lr','0.0001',
-              '--epochs','10000',
+              '--epochs','20000',
               '--summary_seconds','300',
               '--noise_level_for_continous_dimension','0.05',
               '--noise_level_for_discrete_dimension','0.3',
@@ -48,6 +49,9 @@ parser.add_argument('--noise_level_for_continous_dimension', dest='noise_level_f
 parser.add_argument('--noise_level_for_discrete_dimension', dest='noise_level_for_discrete_dimension',type=float,required=True)
 parser.add_argument('--layer_channel_list', dest='layer_channel_list',type=str,required=True)
 parser.add_argument('--weight_decay_rate', dest='weight_decay_rate',type=float,required=True)
+
+parser.add_argument('--auc_loss_penalty', dest='auc_loss_penalty',type=float,required=True)
+
 
 
 def main(_):

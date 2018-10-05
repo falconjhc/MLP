@@ -14,6 +14,7 @@ import pandas as pd
 
 import multiprocessing as multi_thread
 from sklearn.metrics import roc_auc_score
+from ops import auc
 
 
 
@@ -166,23 +167,6 @@ def train_procedures(args):
                                        stddev=0.1,
                                        dtype=tf.float32)
 
-        # for ii in range(real_feature_dimension):
-        #     if ii not in continous_dimension_idx:
-        #         current_dimension_noise = tf.random_normal(shape=[args.batch_size, 1],
-        #                                                    mean=0.0,
-        #                                                    stddev=args.noise_level_for_discrete_dimension,
-        #                                                    dtype=tf.float32)
-        #     else:
-        #         current_dimension_noise = tf.random_normal(shape=[args.batch_size, 1],
-        #                                                    mean=0.0,
-        #                                                    stddev=args.noise_level_for_continous_dimension,
-        #                                                    dtype=tf.float32)
-        #     if ii == 0:
-        #         full_noise_added = current_dimension_noise
-        #     else:
-        #         full_noise_added = tf.concat([full_noise_added, current_dimension_noise], axis=1)
-        # feature_input_train = feature_input + full_noise_added
-
         train_logits, train_probability, network_info = \
             network_model(features=train_data_tensor + noise_added,
                           device=current_device,
@@ -219,6 +203,14 @@ def train_procedures(args):
         ce_loss = tf.reduce_mean(ce_loss)
         ce_loss_summary = tf.summary.scalar("Loss_CE", ce_loss)
 
+        auc_loss = auc(predictions=train_probability,
+                       labels=train_true_label_tensor)
+        auc_loss = 1 - auc_loss
+        auc_loss = auc_loss * args.auc_loss_penalty
+        #auc_loss = tf.reduce_mean(auc_loss)
+        auc_loss_summary = tf.summary.scalar("Loss_Auc", auc_loss/args.auc_loss_penalty)
+
+
         # regularization with weight decay
         weight_decay_loss_list = tf.get_collection(network_info + '_weight_decay')
         weight_decay_loss = 0
@@ -228,9 +220,9 @@ def train_procedures(args):
         wd_loss_summary = tf.summary.scalar("Loss_WD",
                                             tf.abs(weight_decay_loss))
 
-        loss_optimization = ce_loss + wd_loss
-        merged_loss_summary = tf.summary.merge([ce_loss_summary, wd_loss_summary])
-        merged_loss_value = [ce_loss, wd_loss]
+        loss_optimization = ce_loss + wd_loss + auc_loss
+        merged_loss_summary = tf.summary.merge([ce_loss_summary, wd_loss_summary, auc_loss_summary])
+        merged_loss_value = [ce_loss, wd_loss, auc_loss]
 
         # build accuracies and errors
         test_prdt_label_tensor = (tf.sign(test_probability_eval - 0.5) + 1) / 2
@@ -323,6 +315,7 @@ def train_procedures(args):
         print(print_separater)
         print(print_separater)
         print(print_separater)
+        print("AucLossPenalty:%.5f" % args.auc_loss_penalty)
         raw_input("Press Enter to Coninue")
         print(print_separater)
 
@@ -345,25 +338,29 @@ def train_procedures(args):
                            actual_length=train_data_length,
                            iteration_for_each_epoch=iteration_for_each_epoch_train)
 
+            
+
+            print("Epoch:%d, TrainAuc:%.5f, TrainAcy:%.5f, TrainMSE:%.5f;" % (ei, train_auc, train_accuracy, train_mse))
+            print("Epoch:%d, Test@Auc:%.5f, Test@Acy:%.5f, Test@MSE:%.5f;" % (ei, test_auc, test_accuracy, test_mse))
             if time.time()-time_recorded>args.summary_seconds or ei==ei_start:
                 time_recorded=time.time()
-                print("Epoch:%d, TrainAuc:%.5f, TrainAcy:%.5f, TrainMSE:%.5f;" % (ei, train_auc, train_accuracy, train_mse))
-                print("Epoch:%d, Test@Auc:%.5f, Test@Acy:%.5f, Test@MSE:%.5f;" % (ei, test_auc, test_accuracy, test_mse))
                 print(print_test_info)
-                print(print_separater)
+            print(print_separater)
 
 
-            if test_auc>previous_highest_auc or (test_mse<previous_lowest_mse and test_accuracy > previous_highest_accuracy):
+            if test_auc>previous_highest_auc and test_accuracy > previous_highest_accuracy and ei > 5:
                 if test_auc>previous_highest_auc:
                     previous_highest_auc=test_auc
                     print("Best AUC Found!")
-                if test_mse<previous_lowest_mse and test_accuracy > previous_highest_accuracy:
-                    previous_lowest_mse=test_mse
+                if test_accuracy > previous_highest_accuracy:
                     previous_highest_accuracy=test_accuracy
-                    print("Best Accuracy/MSE Found!")
+                    print("Best Accuracy Found!")
+                if test_mse < previous_lowest_mse:
+                  previous_lowest_mse=test_mse
+                  print("Lowest MSE Found!")
 
                 previous_highest_auc_at_epoch = ei
-                print_test_info="Epoch:%d, HighestAuc:%.5f @Epoch:%d, Accuracy:%.5f, MSE:%.5f" % (ei, previous_highest_auc, previous_highest_auc_at_epoch,test_accuracy,test_mse)
+                print_test_info="Epoch:%d, HighestAuc:%.5f, Accuracy:%.5f, MSE:%.5f" % (ei, previous_highest_auc,test_accuracy,test_mse)
 
                 print(print_test_info)
                 model_save_path = os.path.join(current_model_save_path, 'Model')

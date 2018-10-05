@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b910393-398e-4736-8a64-cc5484c18353" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MLP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MLP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/OriginalData/1.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/OriginalData/2.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/OriginalData/3.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/OriginalData/4.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/OriginalData/data_org.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/divide1_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/divide1_test.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/divide1_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion00/divide1_train.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/OriginalData/data_org.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/OriginalData/data_v01.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/OriginalData/dataset.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/divide1_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/divide1_test.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/divide1_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion01/divide1_train.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/OriginalData/data_org.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/OriginalData/data_v02.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/OriginalData/dataset20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/divide1_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/divide1_test.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/divide1_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DataVersion02/divide1_train.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/DiscreteFeatureCheck.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/FeatureNormalization.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/JiQiong/data_divide.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/LinRui/data.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/LinRui/orgData_Delete.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM_Code/FileOperation/ResultFileWriteForOrg.m" beforeDir="false" afterPath="$PROJECT_DIR$/SVM_Code/FileOperation/ResultFileWriteForOrg.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM_Code/OrgSvmImplementation.m" beforeDir="false" afterPath="$PROJECT_DIR$/SVM_Code/OrgSvmImplementation.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM_Code/OrgSvmScript1.m" beforeDir="false" afterPath="$PROJECT_DIR$/SVM_Code/OrgSvmScript1.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM_Code/OrgSvmScript2.m" beforeDir="false" afterPath="$PROJECT_DIR$/SVM_Code/OrgSvmScript2.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/logitic_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/mlp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_JQ/logitic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_JQ/logitic_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/ops.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_test_procedures.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_test_procedures.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MLP$data_preprocess__1_.coverage" NAME="data_preprocess (1) Coverage Results" MODIFIED="1538487387277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data/JiQiong" />
-    <SUITE FILE_PATH="coverage/MLP$logitic_regression__1_.coverage" NAME="logitic_regression (1) Coverage Results" MODIFIED="1538488145019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts_LR" />
-    <SUITE FILE_PATH="coverage/MLP$logitic_regression.coverage" NAME="logitic_regression Coverage Results" MODIFIED="1538544503953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts_JQ" />
+    <SUITE FILE_PATH="coverage/MLP$logitic_regression.coverage" NAME="logitic_regression Coverage Results" MODIFIED="1538721017181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts_JQ" />
     <SUITE FILE_PATH="coverage/MLP$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1538465965297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MLP$data_preprocess_for_orgData_Delete.coverage" NAME="data_preprocess_for_orgData_Delete Coverage Results" MODIFIED="1538479071196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data/LinRui" />
+    <SUITE FILE_PATH="coverage/MLP$logitic_regression__1_.coverage" NAME="logitic_regression (1) Coverage Results" MODIFIED="1538488145019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts_LR" />
+    <SUITE FILE_PATH="coverage/MLP$data_preprocess__1_.coverage" NAME="data_preprocess (1) Coverage Results" MODIFIED="1538487387277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data/JiQiong" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="928046614">
@@ -89,14 +58,64 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="1277262848">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="68" />
+          <entry key="logitic_regression" value="1" />
+          <entry key="py" value="247" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="316" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_test_procedures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="168">
+              <caret line="222" column="52" selection-start-line="222" selection-start-column="35" selection-end-line="222" selection-end-column="52" />
+              <folding>
+                <element signature="e#24#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="747">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
+              <folding>
+                <element signature="e#24#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,6 +129,10 @@
       <find>shuffle</find>
       <find>roc_auc_score</find>
       <find>evaluation</find>
+      <find>cross</find>
+      <find>predictions must be in [0, 1]</find>
+      <find>train_</find>
+      <find>train_logits</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,10 +146,11 @@
         <option value="$PROJECT_DIR$/Scripts/mlp.py" />
         <option value="$PROJECT_DIR$/Data/JiQiong/data_preprocess.py" />
         <option value="$PROJECT_DIR$/Scripts_JQ/mlp.py" />
-        <option value="$PROJECT_DIR$/Scripts_JQ/logitic_regression.py" />
         <option value="$PROJECT_DIR$/Scripts_LR/mlp.py" />
-        <option value="$PROJECT_DIR$/train_test_procedures.py" />
         <option value="$PROJECT_DIR$/Scripts_LR/logitic_regression.py" />
+        <option value="$PROJECT_DIR$/Scripts_JQ/logitic_regression.py" />
+        <option value="$PROJECT_DIR$/ops.py" />
+        <option value="$PROJECT_DIR$/train_test_procedures.py" />
       </list>
     </option>
   </component>
@@ -136,11 +160,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="194" />
-    <option name="y" value="27" />
-    <option name="width" value="1189" />
-    <option name="height" value="747" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1638" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -166,41 +189,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLP" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLP" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="JiQiong" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLP" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts_JQ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLP" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts_LR" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -286,15 +275,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="25" width="1229" height="999" extended-state="6" />
+    <frame x="0" y="23" width="1638" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26373628" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2669173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49957734" weight="0.36966825" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49957734" weight="0.47368422" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -303,7 +293,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50042266" side_tool="true" weight="0.6599526" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.55016184" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.2774123" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32938388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -349,95 +339,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/train_test_procedures.py</url>
-          <line>383</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scripts_JQ/logitic_regression.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train_test_procedures.py</url>
-          <line>332</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train_test_procedures.py</url>
-          <line>515</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train_test_procedures.py</url>
-          <line>507</line>
-          <option name="timeStamp" value="17" />
+          <line>398</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/sklearn/linear_model/least_angle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/sklearn/linear_model/least_angle.py" />
     <entry file="file://$PROJECT_DIR$/data_preprocess.py" />
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="184" column="23" selection-start-line="184" selection-start-column="15" selection-end-line="184" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="4164" selection-start-line="4164" selection-end-line="4164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/pandas/io/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="396" selection-start-line="396" selection-end-line="396" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/imblearn/over_sampling/random_over_sampler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/LinRui/data_preprocess_for_orgData_Delete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1952">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/numpy/core/fromnumeric.py" />
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/pandas/core/series.py" />
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/pandas/io/common.py" />
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/imblearn/over_sampling/random_over_sampler.py" />
+    <entry file="file://$PROJECT_DIR$/Data/LinRui/data_preprocess_for_orgData_Delete.py" />
     <entry file="file://$PROJECT_DIR$/Scripts/mlp.py" />
     <entry file="file://$PROJECT_DIR$/Scripts/logitic_regression.py" />
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/sklearn/decomposition/sparse_pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="258" column="47" selection-start-line="258" selection-start-column="42" selection-end-line="258" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/JiQiong/data_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="134" column="28" lean-forward="true" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/sklearn/decomposition/sparse_pca.py" />
+    <entry file="file://$PROJECT_DIR$/Data/JiQiong/data_preprocess.py" />
     <entry file="file://$PROJECT_DIR$/Scripts_LR/mlp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -459,24 +385,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/sklearn/metrics/ranking.py">
+    <entry file="file://$USER_HOME$/.conda/envs/tensorflow_py27/lib/python2.7/site-packages/sklearn/metrics/ranking.py" />
+    <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="360" column="33" lean-forward="true" selection-start-line="360" selection-start-column="33" selection-end-line="360" selection-end-column="33" />
+        <state relative-caret-position="318">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression.py">
+    <entry file="file://$PROJECT_DIR$/networks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="522">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_test_procedures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="515" column="28" selection-start-line="515" selection-start-column="15" selection-end-line="515" selection-end-column="28" />
+        <state relative-caret-position="168">
+          <caret line="222" column="52" selection-start-line="222" selection-start-column="35" selection-end-line="222" selection-end-column="52" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
