@@ -10,8 +10,8 @@ from sklearn.decomposition import PCA
 
 
 
-discrete_dim2=[0,1,2,3,4,5,8,9,10,11,12,13,14,15,16,17,18,19,22,23,24]
-dataset_model = pd.read_csv('./dataset20.csv', sep=',')
+discrete_dim=[3]
+dataset_model = pd.read_csv('../Data/data_ML_Exit1.csv', sep=',')
 keep_componenent=75
 
 
@@ -105,7 +105,6 @@ full_y = dataset_value[:,0]
 full_x = dataset_value[:,1:]
 
 full_dim=range(0,dim_size-1)
-discrete_dim = discrete_dim2
 continuous_dim = [ii for ii in full_dim if ii not in discrete_dim]
 
 
@@ -136,10 +135,10 @@ train_data, test_data, train_label, test_label = train_test_split(pattern,full_y
 # train_data=svd.transform(train_data)
 # test_data=svd.transform(test_data)
 
-pca = PCA(n_components=keep_componenent)
-coef = pca.fit(train_data)
-train_data = pca.transform(train_data)
-test_data = pca.transform(test_data)
+# pca = PCA(n_components=keep_componenent)
+# coef = pca.fit(train_data)
+# train_data = pca.transform(train_data)
+# test_data = pca.transform(test_data)
 
 # pca = SparsePCA(n_components=keep_componenent)
 # coef = pca.fit(train_data)
@@ -161,6 +160,6 @@ train_data_save = pd.DataFrame(train_data_save,
 test_data_save = pd.DataFrame(test_data_save,
                               columns=column_name)
 
-train_data_save.to_csv('./TrainData_JHC.csv',sep=',',index_label='-1')
-test_data_save.to_csv('./TestData_JHC.csv',sep=',',index_label='-1')
+train_data_save.to_csv('./data_ML_Exit1_Train.csv',sep=',',index_label='-1')
+test_data_save.to_csv('./data_ML_Exit1_Test.csv',sep=',',index_label='-1')
 

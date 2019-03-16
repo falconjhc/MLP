@@ -62,4 +62,4 @@ def network_model(features,
             previous_output_feature = current_output
 
         output = tf.nn.sigmoid(previous_output_feature)
-        return previous_output_feature, output, network_name_prefix
+    return previous_output_feature, output, network_name_prefix

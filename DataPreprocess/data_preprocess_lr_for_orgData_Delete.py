@@ -8,7 +8,7 @@ import numpy as np
 
 discrete_dim1=[27,29,30]
 discrete_dim2=[3,25,28,31,35,36,39]
-dataset_model = pd.read_csv('./orgData_Delete.csv', sep=',')
+dataset_model = pd.read_csv('../../Data/LinRui/orgData_Delete.csv', sep=',')
 
 
 
@@ -121,7 +121,9 @@ continuous_pattern_scaled = sc.fit_transform(continuous_pattern)
 discrete_pattern1_number = to_number(input_pattern=discrete_pattern1)
 discrete_pattern1_number_scaled = sc.fit_transform(discrete_pattern1_number)
 discrete_pattern2_onehot = to_onehot(input_pattern=discrete_pattern2)
-pattern = np.concatenate([continuous_pattern_scaled,discrete_pattern1_number_scaled,discrete_pattern2_onehot],
+pattern = np.concatenate([continuous_pattern_scaled,
+                          discrete_pattern1_number_scaled,
+                          discrete_pattern2_onehot],
                          axis=1)
 
 

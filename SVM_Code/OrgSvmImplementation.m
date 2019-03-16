@@ -1,13 +1,20 @@
-function [outputAccuracy,outputAuc, thisTrainModel]= OrgSvmImplementation(trainGroup,testGroupList,trainCmd,testCmd,param)
+function [outputAccuracy,outputAuc, outputR2,thisTrainModel]= OrgSvmImplementation(trainGroup,testGroupList,trainCmd,testCmd,param)
 thisTrainModel=libsvmtrain(trainGroup.classLabel,trainGroup.data,trainCmd);
 [predictedLabel, accuracy, probability]=libsvmpredict(testGroupList.classLabel,testGroupList.data,thisTrainModel,testCmd);
 outputAccuracy=accuracy(1);
 probability_new=probability;
 probability_new(find(predictedLabel==0)) = 1-probability_new(find(predictedLabel==0));
 outputAuc = CalAuc(probability_new,testGroupList.classLabel);
+outputR2 = CalR2(testGroupList.classLabel,probability);
+
 end
 
-
+function r2 = CalR2(true_label,predicted_label)
+mean_true_label=mean(true_label);
+ssr = sum(square(true_label-mean_true_label))/(size(true_label,1)-20-1);
+sst = sum(square(predicted_label-mean_true_label))/(size(true_label,1)-1);
+r2 = 1 - ssr/sst;
+end
 
 function  auc = CalAuc( predict, ground_truth )
 % INPUTS

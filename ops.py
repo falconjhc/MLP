@@ -269,8 +269,9 @@ def _confusion_matrix_at_thresholds(labels, predictions, thresholds, weights=Non
 
 
 def auc(labels, predictions, weights=None, num_thresholds=200, name=None, summation_method='trapezoidal'):
+    predictions = tf.nn.sigmoid(predictions)
+    predictions = (tf.sign(predictions - 0.5) + 1) / 2
     
-
     with variable_scope.variable_scope(name, 'auc', (labels, predictions, weights)):
 
         kepsilon = 1e-7  # to account for floating point imprecisions
