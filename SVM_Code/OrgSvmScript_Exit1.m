@@ -124,16 +124,16 @@ parfor parameterTraveller=1:length(parameterSeries)
     
 
     % overall svm
-    [orgAcry, orgAuc, classifier]=OrgSvmImplementation(trainGroup,testGroup,thisTrainCmd,testCmd,param(parameterTraveller));
+    [orgAcry, orgAuc, orgR2, classifier]=OrgSvmImplementation(trainGroup,testGroup,thisTrainCmd,testCmd,param(parameterTraveller));
     
     % accuracy display
     disp(sprintf([cell2mat(thisParamStr(parameterTraveller)),',ParaNo:%d/%d,Acry:%f,Auc:%f,timeElaps:%f'], ...,
-        parameterTraveller,length(parameterSeries),orgAcry,orgAuc,toc));
+        parameterTraveller,length(parameterSeries),orgAcry,orgAuc,orgR2,toc));
     
     
     
     % data bup write
-    ResultFileWriteForOrg(orgAcry,orgAuc, classifier, cell2mat(thisParamBupFileFullPath(parameterTraveller)));
+    ResultFileWriteForOrg(orgAcry,orgAuc, orgR2, classifier, cell2mat(thisParamBupFileFullPath(parameterTraveller)));
 end
 
 
@@ -144,6 +144,7 @@ for parameterTraveller=1:length(parameterSeries)
     loadedAuc=paramBupOutput.auc;
     outputAcry(parameterTraveller)=paramBupOutput.acry;
     outputAuc(parameterTraveller)=paramBupOutput.auc;
+    outputR2(parameterTraveller)=paramBupOutput.r2;
     clear paramBupOutput;
 end
 
@@ -155,6 +156,8 @@ outputAcry=reshape(outputAcry,[length(costSeries),length(gammaSeries)]);
 max(outputAuc)
 outputAuc=reshape(outputAuc,[length(costSeries),length(gammaSeries)]);
 
+max(outputR2)
+outputR2=reshape(outputR2,[length(costSeries),length(gammaSeries)]);
 
 
 % reshape for final result
@@ -200,7 +203,22 @@ costMaxAucIndices=find(costMaxAuc==costMaxAucValue);
 costMaxAuc_CostValue=costSeries(costMaxAucIndices);
 
 
+for gammaTraveller=1:length(gammaSeries)
+gammaMaxR2(gammaTraveller)=max(max(squeeze(outputR2(:,gammaTraveller))));
+end
+gammaMaxR2=gammaMaxR2';
+gammaMaxR2Value=max(gammaMaxR2);
+gammaMaxR2Indices=find(gammaMaxR2==gammaMaxR2Value);
+gammaMaxR2_GammaValue=gammaSeries(gammaMaxR2Indices);
 
+
+for costTraveller=1:length(costSeries)
+costMaxR2(costTraveller)=max(max(squeeze(outputR2(costTraveller,:))));
+end
+costMaxR2=costMaxR2';
+costMaxR2Value=max(costMaxR2);
+costMaxR2Indices=find(costMaxR2==costMaxR2Value);
+costMaxR2_CostValue=costSeries(costMaxR2Indices);
     
     
 

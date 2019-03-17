@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b910393-398e-4736-8a64-cc5484c18353" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MLP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MLP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataPreprocess/data_preprocess_jq.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocess/data_preprocess_jq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataPreprocess/data_preprocess_lr_for_orgData_Delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocess/data_preprocess_lr_for_orgData_Delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SVM_Code/OrgSvmScript.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_JQ/logitic_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_JQ/mlp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_LR/logitic_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_LR/mlp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/networks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/ops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_test_procedures.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_test_procedures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPreprocess/data_preprocess_jq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPreprocess/data_preprocess_lr_for_orgData.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPreprocess/data_preprocess_lr_for_orgData_Delete.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SVM_Code/OrgSvmScript_Exit1.m" beforeDir="false" afterPath="$PROJECT_DIR$/SVM_Code/OrgSvmScript_Exit1.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,64 +23,43 @@
     <SUITE FILE_PATH="coverage/MLP$train_test_procedures.coverage" NAME="train_test_procedures Coverage Results" MODIFIED="1552749213617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MLP$debug.coverage" NAME="debug Coverage Results" MODIFIED="1552748903174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DebugScripts" />
     <SUITE FILE_PATH="coverage/MLP$logitic_regression_Exit1.coverage" NAME="logitic_regression_Exit1 Coverage Results" MODIFIED="1552751256524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts_JQ" />
+    <SUITE FILE_PATH="coverage/MLP$data_preprocess_jq__1_.coverage" NAME="data_preprocess_jq (1) Coverage Results" MODIFIED="1552813958362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scripts_JQ" />
     <SUITE FILE_PATH="coverage/MLP$data_preprocess_lr_for_orgData_Delete.coverage" NAME="data_preprocess_lr_for_orgData_Delete Coverage Results" MODIFIED="1539004136235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataPreprocess" />
     <SUITE FILE_PATH="coverage/MLP$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1538465965297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MLP$data_preprocess_for_orgData_Delete.coverage" NAME="data_preprocess_for_orgData_Delete Coverage Results" MODIFIED="1538479071196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data/LinRui" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/train_test_procedures.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="336">
-                    <caret line="353" column="8" selection-start-line="353" selection-start-column="8" selection-end-line="353" selection-end-column="8" />
-                    <folding>
-                      <element signature="e#24#61#0" expanded="true" />
-                      <marker date="1552751297064" expanded="true" signature="3011:3284" ph="..." />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="928046614">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="6" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="64" />
+          <entry key="py" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="64" />
+          <entry key="Python" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="1714" />
-          <entry key="py" value="4421" />
+          <entry key="py" value="4479" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="6135" />
+          <entry key="Python" value="6193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -132,10 +103,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DebugScripts/debug.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="234">
               <caret line="31" column="35" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="35" />
               <folding>
                 <element signature="e#24#61#0" expanded="true" />
@@ -144,11 +115,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression_Exit1.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Scripts_JQ/data_preprocess_jq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="213">
+              <caret line="166" column="79" selection-start-line="166" selection-start-column="79" selection-end-line="166" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,6 +187,7 @@
         <option value="$PROJECT_DIR$/Scripts_JQ/logitic_regression_Exit0.py" />
         <option value="$PROJECT_DIR$/Scripts_JQ/logitic_regression_Exit1.py" />
         <option value="$PROJECT_DIR$/train_test_procedures.py" />
+        <option value="$PROJECT_DIR$/Scripts_JQ/data_preprocess_jq.py" />
       </list>
     </option>
   </component>
@@ -223,10 +198,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="51" />
-    <option name="y" value="25" />
-    <option name="width" value="1229" />
-    <option name="height" value="999" />
+    <option name="x" value="1280" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,20 +245,16 @@
               <item name="MLP" type="462c0819:PsiDirectoryNode" />
               <item name="Scripts_JQ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLP" type="462c0819:PsiDirectoryNode" />
-              <item name="SVM_Code" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../W-Net" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -301,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.logitic_regression_Exit1">
+  <component name="RunManager" selected="Python.data_preprocess_jq (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="MLP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,6 +294,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="data_preprocess_jq (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MLP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts_JQ" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts_JQ/data_preprocess_jq.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_preprocess_jq" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MLP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,28 +327,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataPreprocess/data_preprocess_jq.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="debug" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MLP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DebugScripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DebugScripts/debug.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -435,19 +402,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.debug" />
       <item itemvalue="Python.data_preprocess_jq" />
       <item itemvalue="Python.logitic_regression_Exit0" />
       <item itemvalue="Python.train_test_procedures" />
       <item itemvalue="Python.logitic_regression_Exit1" />
+      <item itemvalue="Python.data_preprocess_jq (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_preprocess_jq (1)" />
         <item itemvalue="Python.logitic_regression_Exit1" />
         <item itemvalue="Python.logitic_regression_Exit0" />
         <item itemvalue="Python.train_test_procedures" />
         <item itemvalue="Python.data_preprocess_jq" />
-        <item itemvalue="Python.debug" />
       </list>
     </recent_temporary>
   </component>
@@ -465,16 +432,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="25" width="1229" height="999" extended-state="6" />
+    <frame x="1280" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49656358" visible="true" weight="0.21978022" />
-      <window_info id="Structure" order="1" sideWeight="0.50343645" side_tool="true" visible="true" weight="0.21978022" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4918033" visible="true" weight="0.1456777" />
+      <window_info id="Structure" order="1" sideWeight="0.5081967" side_tool="true" visible="true" weight="0.1456777" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49957734" visible="true" weight="0.31042653" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49957734" weight="0.31042653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -484,12 +451,12 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50042266" side_tool="true" weight="0.6599526" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.32938388" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.54028434" />
+      <window_info anchor="bottom" id="Python Console" order="13" visible="true" weight="0.53937435" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" x="0" y="0" width="257" height="799" id="Documentation" order="4" side_tool="true" visible="true" weight="0.20540997" />
+      <window_info anchor="right" x="0" y="0" width="257" height="799" id="Documentation" order="4" side_tool="true" visible="true" weight="0.12966916" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -552,6 +519,16 @@
           <line>384</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Scripts_JQ/data_preprocess_jq.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Scripts_JQ/data_preprocess_jq.py</url>
+          <line>166</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -584,16 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreprocess/data_preprocess_lr_for_orgData_Delete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocess/data_preprocess_lr_for_orgData_Delete.py" />
     <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression.py" />
     <entry file="file://$PROJECT_DIR$/Scripts_JQ/mlp.py" />
     <entry file="file://$PROJECT_DIR$/Scripts_JQ/mlp_Exit0.py">
@@ -624,16 +592,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreprocess/data_preprocess_jq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocess/data_preprocess_jq.py" />
     <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression_Exit0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -648,23 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression_Exit1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DebugScripts/debug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_test_procedures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -672,6 +614,33 @@
           <folding>
             <element signature="e#24#61#0" expanded="true" />
             <marker date="1552751297064" expanded="true" signature="3011:3284" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts_JQ/logitic_regression_Exit1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DebugScripts/debug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts_JQ/data_preprocess_jq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="166" column="79" selection-start-line="166" selection-start-column="79" selection-end-line="166" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
